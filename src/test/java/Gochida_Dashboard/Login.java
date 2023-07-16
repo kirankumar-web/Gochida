@@ -19,13 +19,13 @@ public class Login
   @BeforeTest
   public static void loginpage() throws InterruptedException
   {
-      //WebDriverManager.chromedriver().setup();
+      WebDriverManager.chromedriver().setup();
       
-      WebDriverManager.firefoxdriver().setup();
+      //WebDriverManager.firefoxdriver().setup();
       
-       driver = new FirefoxDriver();
+      // driver = new FirefoxDriver();
 
-     // WebDriver driver = new ChromeDriver();
+       driver = new ChromeDriver();
       
       driver.get("https://www.racanaa.energy/login");
       
@@ -33,9 +33,9 @@ public class Login
 	  
 }
   @Test
-  public static void testfun()
+  public static void testrun()
   {
-      driver.close();
+      driver.quit();
 
   }
 }
