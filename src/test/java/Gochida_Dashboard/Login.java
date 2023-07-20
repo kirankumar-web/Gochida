@@ -19,7 +19,10 @@ public class Login
   @BeforeTest
   public static void loginpage() throws InterruptedException
   {
-      WebDriverManager.chromedriver().setup();
+      //WebDriverManager.chromedriver().setup();
+
+     WebDriverManager.chromedriver().driverVersion("114.0.5735").setup();
+
       
       //WebDriverManager.firefoxdriver().setup();
       
